@@ -77,6 +77,63 @@ This repository contains four Python files (Lessons 1–4.py) designed to teach 
   Expired Files (TTL 7 days): ['doc1.txt']
   ```
 
+## 1. Object-Oriented Programming (OOP)
+
+### 📦 Class & Object Design
+- **Design clean APIs**
+  - Example methods: `upload()`, `copy()`, etc.
+- **Encapsulation & Refactoring**
+  - Hide internal details
+  - Reuse logic to reduce code duplication
+- **Composition over Inheritance**
+  - Prefer helper class composition
+  - Avoid unnecessary inheritance chains
+
+### 🧱 Data Organization
+- Structure your system with meaningful classes:
+  - `File`, `Directory`, `User`, etc.
+
+---
+
+## 2. Data Structures (Built-in)
+
+| Structure        | Why Use It                                     |
+|------------------|------------------------------------------------|
+| `dict` / HashMap | Store file info, TTLs, object references       |
+| `list` / array   | Manage ordered data (file queues, histories)   |
+| `set`            | Track unique entries, optimize lookups         |
+| `heap`, `Counter`| Sort/filter search results (by size, prefix)   |
+| `deque`, `queue` | Simulate timelines or file expirations         |
+
+> ⚠️ **Avoid:** Trees, Tries, Graphs — unless specifically asked.
+
+---
+
+## 3. Basic Algorithms (For Fluency)
+
+| Concept               | Why It Matters                                  |
+|------------------------|--------------------------------------------------|
+| Sorting with custom keys | E.g. sort by file size, then name              |
+| String manipulation     | Parse commands, file names, timestamps         |
+| Time comparison         | Handle TTL / rollback via timestamp logic      |
+
+> ⚠️ **Avoid:** Binary search, Dynamic Programming, Recursion-heavy problems (unless asked)
+
+---
+
+## 4. Clean Coding Habits
+
+### ✅ Good Habits & Their Impact
+
+| Habit                                  | Impact                                               |
+|----------------------------------------|------------------------------------------------------|
+| Use descriptive method & variable names| Helps when reading/refactoring code later           |
+| Modular methods                        | Plug-and-play design; easier debugging & scaling    |
+| Handle edge cases from level 1         | Builds robust, predictable systems                  |
+| Focus on clarity, not cleverness       | Easier to maintain and extend                       |
+| Defensive programming                  | Anticipate and handle invalid inputs gracefully     |
+| Avoid premature optimization           | Maintain code readability and simplicity first      |
+
 ## Notes
 - The code assumes the current date is May 28, 2025, for time-based calculations (e.g., expiration checks).
 - Each `.py` file is self-contained and can be run independently.

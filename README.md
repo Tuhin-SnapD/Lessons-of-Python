@@ -20,8 +20,8 @@ This repository contains four Python files (Lessons 1–4.py) designed to teach 
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/Tuhin-SnapD/Lessons-of-Python.git
+   cd Lessons-of-Python
    ```
 
 2. Run any `final.py` file:
